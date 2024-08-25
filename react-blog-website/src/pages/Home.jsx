@@ -12,9 +12,9 @@ const Home = () => {
         where they can be a geek.
         </div>
 
-        <div className="flex items-center space-x-4 px-40 py-10">
+        <div className="flex items-center space-x-4 px-40 py-10 ">
           <img src="eigen re.png" alt="" className="flex-shrink-0 w-2/6 " />
-          <p className="whitespace-nowrap">is your place to be and build cool stuff</p>
+          <p className=" flex flex-wrap">is your place to be and build cool stuff</p>
         </div>
         <div className="flex items-center space-x-4">
           <p className='text-white font-bold text-5xl right-6 py-32 flex justify-center items-center text-center '>Find people to

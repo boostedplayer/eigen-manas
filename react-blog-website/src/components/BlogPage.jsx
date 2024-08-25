@@ -2,7 +2,7 @@ import React, { act, useEffect, useState } from 'react'
 import BlogCards from './BlogCards';
 import Pagination from './Pagination';
 import CategorySelection from './CategorySelection';
-import SideBar from './SideBar';
+import SideBar from './SideBar'
 
 const BlogPage = () => {
     const [blogs, setblogs] = useState([])
@@ -26,7 +26,7 @@ const BlogPage = () => {
         }
 
         fetchBlogs();
-    }, [currentPage, pageSize, selectedCategory])
+    }, [ selectedCategory])
 
     // page changing size
     const handlePageChange = (pageNumber)=>{
@@ -47,7 +47,7 @@ const BlogPage = () => {
       {/* blog cards section */}
 
       <div className='flex flex-col lg:flex-row gap-8'>
-        <BlogCards blogs={blogs} currentPage={currentPage} selectedCategory={selectedCategory} pageSize= {pageSize}/>
+        <BlogCards/>
 
     {/* sidebar components */}
         <div>

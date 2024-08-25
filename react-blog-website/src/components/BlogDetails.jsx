@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import blogData from '../../../modern-react-js-blog-starter-files/api/blogsData.json'; // Adjust the path as necessary
+import blogsdata from "../data/blogsdata.json"
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const blog = blogData.find(blog => blog.id === parseInt(id));
+    const blog = blogsdata.blogs.find(blogs => blogs.id === parseInt(id));
+    console.log(blog)
+    
 
     if (!blog) {
         return <div>Blog not found</div>;
